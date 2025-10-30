@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chetan Choudhary | Indie Game Developer</title>
+  
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
@@ -15,33 +16,47 @@
       scroll-behavior: smooth;
     }
 
-    header {
+    /* header {
       text-align: center;
-      padding: 80px 20px;
+      padding: 100px 20px 60px;
       background: linear-gradient(135deg, #111827, #1f2937);
-    }
+    } */
+   header {
+  text-align: center;
+  padding: 80px 20px;
+  background: 
+    linear-gradient(rgba(11, 12, 16, 0.6), rgba(11, 12, 16, 0.9)),
+    url('https://github.com/chetanchoudhari/chetan-choudhary.github.io/blob/main/backFef.png?raw=true')
+    no-repeat center center/cover;
+  background-attachment: fixed;
+}
 
+
+    
+    /* Game controller icon */
     header img {
       width: 120px;
-      animation: float 3s ease-in-out infinite;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 12px #60a5fa);
+      transition: transform 0.3s ease, filter 0.3s ease;
     }
 
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-10px); }
+    header img:hover {
+      transform: scale(1.1);
+      filter: drop-shadow(0 0 25px #60a5fa);
     }
 
     h1 {
-      font-size: 2.8em;
-      margin: 20px 0 10px;
-      color: #60a5fa;
+      font-size: 2.7em;
+      margin: 40px 0 10px;
+      color: #6077fad9;
     }
 
     p.tagline {
       font-size: 1.2em;
       color: #9ca3af;
     }
-
+    
     section {
       max-width: 900px;
       margin: 60px auto;
@@ -97,9 +112,11 @@
 
 <body>
   <header>
-    <img src="https://cdn-icons-png.flaticon.com/512/599/599502.png" alt="controller" />
-    <h1>Chetan Choudhary</h1>
-    <p class="tagline">B.Tech CSE Student | Exploring the space between Code and Creativity 🎮💻</p>
+    <!-- Controller icon -->
+    <img src="https://www.pngmart.com/files/23/Pixel-PNG.png" alt="Game Controller" />
+    <h1>Game Dev in Progress</h1>
+    <p class="tagline">Home
+    </p>
   </header>
 
   <section>
@@ -131,13 +148,13 @@
     <h2>My Projects</h2>
     <div class="games">
       <div class="game">
-        <img src="https://i.ibb.co/Ky8tM04/plane-shooter.jpg" alt="2D Plane Shooter" />
+        <img src="https://img.itch.zone/aW1nLzIzODUyMDMzLnBuZw==/347x500/SUND%2FE.png" alt="2D Plane Shooter" />
         <h3>2D Plane Shooter</h3>
         <p>An arcade-style endless shooter built in Unity.</p>
-        <a href="https://your-itch-profile.itch.io/plane-shooter" target="_blank">Play on Itch.io →</a>
+        <a href="https://chetan-prime.itch.io/planevsplane" target="_blank">Play on Itch.io →</a>
       </div>
       <div class="game">
-        <img src="https://i.ibb.co/whLwNGh/cube-runner.jpg" alt="Cube Runner" />
+        <img src="https://img.itch.zone/aW1nLzIzODUyMTA0LnBuZw==/347x500/HuGJLD.png" alt="Cube Runner" />
         <h3>Cube Runner</h3>
         <p>A fast-paced obstacle dodging game testing reflexes and precision.</p>
         <a href="https://your-itch-profile.itch.io/cube-runner" target="_blank">Play on Itch.io →</a>
