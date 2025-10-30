@@ -3,151 +3,164 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Chetan | Game Dev Portfolio</title>
+  <title>Chetan Choudhary | Indie Game Developer</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
     body {
-      font-family: Arial, sans-serif;
       margin: 0;
-      background: #0d1117;
-      color: #e6edf3;
-      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+      background: #0b0c10;
+      color: #ffffff;
+      scroll-behavior: smooth;
     }
+
     header {
       text-align: center;
-      padding: 2rem;
-      background: #161b22;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #111827, #1f2937);
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5rem;
-      color: #58a6ff;
+
+    header img {
+      width: 120px;
+      animation: float 3s ease-in-out infinite;
     }
-    header p {
-      font-size: 1.2rem;
-      color: #8b949e;
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
+
+    h1 {
+      font-size: 2.8em;
+      margin: 20px 0 10px;
+      color: #60a5fa;
+    }
+
+    p.tagline {
+      font-size: 1.2em;
+      color: #9ca3af;
+    }
+
     section {
       max-width: 900px;
-      margin: auto;
-      padding: 2rem;
+      margin: 60px auto;
+      padding: 0 20px;
     }
+
     h2 {
-      border-bottom: 2px solid #30363d;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-      color: #58a6ff;
+      color: #fbbf24;
+      border-bottom: 2px solid #fbbf24;
+      display: inline-block;
+      margin-bottom: 20px;
     }
-    .projects {
+
+    .games {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      gap: 20px;
     }
-    .card {
-      background: #161b22;
-      padding: 1rem;
+
+    .game {
+      background: #1f2937;
+      padding: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s ease;
+    }
+
+    .game:hover {
+      transform: scale(1.05);
+    }
+
+    .game img {
+      width: 100%;
       border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
-    .card h3 {
-      margin-top: 0;
-      color: #79c0ff;
-    }
-    .card p {
-      font-size: 0.9rem;
-      color: #c9d1d9;
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 0.5rem;
-      color: #58a6ff;
-      text-decoration: none;
-      font-weight: bold;
-    }
+
     footer {
       text-align: center;
-      padding: 1.5rem;
-      background: #161b22;
-      margin-top: 2rem;
-      color: #8b949e;
+      padding: 30px;
+      background: #111827;
+      color: #6b7280;
+    }
+
+    a {
+      color: #60a5fa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
+    <img src="https://cdn-icons-png.flaticon.com/512/599/599502.png" alt="controller" />
     <h1>Chetan Choudhary</h1>
-    <p>Aspiring Indie Game Developer | B.Tech CSE</p>
+    <p class="tagline">B.Tech CSE Student | Exploring the space between Code and Creativity 🎮💻</p>
   </header>
 
   <section>
-  <h2>My Journey</h2>
-  <p>
-    Being a B.Tech CSE student, I’ve always found myself torn between two paths — 
-    following the traditional computer science route or pursuing what I truly enjoy: making games.
-  </p>
-  <p>
-    At first, I tried to fit into the usual CSE routine — coding assignments, DSA practice, and placement pressure — 
-    but every time I opened Unity or started building something interactive, I felt alive again. 
-    I realized game development isn't just a hobby for me — it's the reason I started loving code in the first place.
-  </p>
-  <p>
-    So, I decided to explore both worlds.  
-    I’m learning data structures and problem-solving to strengthen my logic, while also creating small indie games 
-    that express creativity, storytelling, and design.  
-    This portfolio is a reflection of that journey — a student trying to find balance between a stable career and a creative passion.
-  </p>
-</section>
+    <h2>About Me</h2>
+    <p>
+      Hi! I'm <strong>Chetan</strong>, a passionate indie game developer and computer science student.
+      I love building interactive experiences — from 2D shooters to car driving simulations — and 
+      constantly experiment with blending design and logic.
+    </p>
+  </section>
+
+  <section>
+    <h2>My Journey</h2>
+    <p>
+      Being a B.Tech CSE student, I’ve always found myself torn between two paths — 
+      following the traditional computer science route or pursuing what I truly enjoy: making games.
+    </p>
+    <p>
+      At first, I focused on the usual coding routine — DSA, theory, placements — 
+      but every time I opened Unity, it reminded me why I started coding.
+    </p>
+    <p>
+      Now, I’m combining both worlds: sharpening my logic through coding and expressing creativity through games.
+      This portfolio represents that ongoing journey — not just my work, but my growth.
+    </p>
+  </section>
 
   <section>
     <h2>My Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>🚀 Sky Blaster</h3>
-        <p>A fast-paced 2D plane shooter with enemies, scoring system, and player controls.</p>
-        <a href="https://your-itch-link" target="_blank">🎮 Play on Itch.io</a>
+    <div class="games">
+      <div class="game">
+        <img src="https://i.ibb.co/Ky8tM04/plane-shooter.jpg" alt="2D Plane Shooter" />
+        <h3>2D Plane Shooter</h3>
+        <p>An arcade-style endless shooter built in Unity.</p>
+        <a href="https://your-itch-profile.itch.io/plane-shooter" target="_blank">Play on Itch.io →</a>
       </div>
-      <div class="card">
-        <h3>🟦 Cube Runner</h3>
-        <p>An endless runner with obstacles and speed-based challenges.</p>
-        <a href="https://your-itch-link" target="_blank">🎮 Play on Itch.io</a>
+      <div class="game">
+        <img src="https://i.ibb.co/whLwNGh/cube-runner.jpg" alt="Cube Runner" />
+        <h3>Cube Runner</h3>
+        <p>A fast-paced obstacle dodging game testing reflexes and precision.</p>
+        <a href="https://your-itch-profile.itch.io/cube-runner" target="_blank">Play on Itch.io →</a>
       </div>
-      <div class="card">
-        <h3>🚗 City Racer</h3>
-        <p>A simple car driving simulation with terrain and controls for practice and fun.</p>
-        <a href="https://your-itch-link" target="_blank">🎮 Play on Itch.io</a>
-      </div>
-      <div class="card">
-        <h3>🌄 Terrain Showcase</h3>
-        <p>A custom-built Unity terrain environment demonstrating terrain tools, textures, and lighting.</p>
-        <a href="https://your-itch-link" target="_blank">📸 View Showcase</a>
+      <div class="game">
+        <img src="https://i.ibb.co/MRrqf77/car-drive.jpg" alt="Car Driving Game" />
+        <h3>Car Driving</h3>
+        <p>A smooth 3D driving experience showcasing terrain design and physics.</p>
+        <a href="https://your-itch-profile.itch.io/car-driving" target="_blank">Play on Itch.io →</a>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Unity (2D & 3D Game Development)</li>
-      <li>C# Programming</li>
-      <li>Gameplay & Level Design</li>
-      <li>Basic Environment Art & Terrain Tools</li>
-      <li>Git & GitHub</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>
-      📧 Email: yourname@email.com <br>
-      🔗 <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a> | 
-      🎮 <a href="https://your-itch-username.itch.io" target="_blank">Itch.io</a> | 
-      💻 <a href="https://github.com/your-username" target="_blank">GitHub</a>
+    <h2>Connect With Me</h2>
+    <p>👾 <a href="https://your-itch-profile.itch.io" target="_blank">Itch.io</a> | 
+       🧑‍💻 <a href="https://github.com/your-github-username" target="_blank">GitHub</a> | 
+       💼 <a href="https://www.linkedin.com/in/your-linkedin" target="_blank">LinkedIn</a>
     </p>
   </section>
 
   <footer>
-    <p>© 2025 Chetan Choudhary | Indie Game Developer Portfolio</p>
+    <p>© 2025 Chetan Choudhary | Crafted with ❤️ and Unity</p>
   </footer>
-
 </body>
 </html>
